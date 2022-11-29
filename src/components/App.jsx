@@ -45,8 +45,10 @@ export class App extends Component {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          fontSize: 40,
+          fontSize: 30,
           color: '#010101',
+          border: '2px solid',
+          backgroundColor: '#FFF0F5',
         }}
       >
         <Section title="Please leave feedback">

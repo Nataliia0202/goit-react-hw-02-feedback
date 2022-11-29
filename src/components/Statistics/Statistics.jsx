@@ -1,18 +1,21 @@
 import PropTypes from 'prop-types';
-import css from './Statistics.module.css';
+import {
+  FeedbackList,
+  FeedbackListItem,
+} from 'components/Statistics/Statistics.styled';
 
 export const Statistics = ({ good, neutral, bad, total, positivePercentage,
 }) => {
     return (
-        <ul className={css.feedbackList}>
-            <li className={css.feedbackListItem}>Good: {good}</li>
-            <li className={css.feedbackListItem}>Neutral: {neutral}</li>
-            <li className={css.feedbackListItem}>Bad: {bad}</li>
-            <li className={css.feedbackListItem}>Total: {total}</li>
-            <li className={css.feedbackListItem}>
+        <FeedbackList>
+            <FeedbackListItem>Good: {good}</FeedbackListItem>
+            <FeedbackListItem>Neutral: {neutral}</FeedbackListItem>
+            <FeedbackListItem>Bad: {bad}</FeedbackListItem>
+            <FeedbackListItem>Total: {total}</FeedbackListItem>
+            <FeedbackListItem>
                 Positive feedback: {positivePercentage} %
-            </li>
-        </ul>
+            </FeedbackListItem>
+        </FeedbackList>
     );
 }
 
